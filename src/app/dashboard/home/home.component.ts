@@ -6,7 +6,8 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
 @Component({
     selector: 'home-cmp',
     
-    templateUrl: 'home.component.html'
+    templateUrl: 'home.component.html',
+    styleUrls: ['./home.component.css']
 })
 
 export class HomeComponent implements OnInit{

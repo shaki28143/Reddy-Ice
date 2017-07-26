@@ -1,0 +1,95 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	width: 40%;
+}
+
+.logoImage {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 300px;
+    background-size: auto 100%;
+}
+
+.headerRightDiv {
+	float: right;
+}
+
+.dispInline {
+	display: inline-block;
+}
+
+.topMargin {
+	margin-top: -8px;
+}
+
+.nameMargin {
+	margin:15px;
+}
+
+.border {
+	border: 1px solid grey;
+}
+
+.panelMargin {
+	margin: 10px 10px 0px 0px;;
+}
+
+.height {
+    min-height: 370px;
+	height: 50%;
+}
+
+.panelPadding {
+	padding: 20px;
+}
+
+.hoverTableHeader th {
+	border:#4e95f4 1px solid;
+	padding:7px;
+	background: lightgrey;
+}
+
+.hoverTable{
+	width:100%; 
+	border-collapse:collapse; 
+}
+.hoverTable td{ 
+	padding:7px; border:#4e95f4 1px solid;font-size: 15px;
+}
+/* Define the default color for all the table rows */
+.hoverTable tr{
+	background: #fff;
+}
+/* Define the hover highlight color for the table row */
+.hoverTable tr:hover {
+      background-color: #0189B4;
+}
+.nav-tabs>li>a {
+                border: 1px solid #ddd;
+                color:#0076bc;
+}
+
+.nav-tabs>li>a:hover {
+                background: #0189b4;
+                color: #fff;
+}
+
+.dropdown {
+                padding: 3px 5px 3px 5px;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 10px;
+	background: #0189b4;
+	color: #fff;
+	padding: 10px 20px;
+	text-align: center;
+	right: 0;
+}
