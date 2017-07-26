@@ -70,13 +70,13 @@ body{
       background-color: #0189B4;
 }
 .nav-tabs>li>a {
-                border: 1px solid #ddd;
-                color:#0076bc;
+	border: 1px solid #ddd;
+	color:#0076bc;
 }
 
 .nav-tabs>li>a:hover {
-                background: #0189b4;
-                color: #fff;
+	background: #0189b4;
+	color: #fff;
 }
 
 .dropdown {

@@ -1,3 +1,4 @@
+import { ChartModule } from '../shared/charts/chart.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { NavbarModule } from '../shared/navbar/navbar.module';
 import { SidebarModule } from '../sidebar/sidebar.module';
@@ -8,6 +9,7 @@ import {DashboardComponent} from './dashboard.component'
 
 @NgModule({
     imports: [
+        ChartModule,
         SidebarModule,
         NavbarModule,
         FooterModule,
