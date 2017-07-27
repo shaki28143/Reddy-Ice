@@ -1,0 +1,33 @@
+.navbar {
+    box-shadow: -8px 6px 38px #b5b0b0;
+    background: #f9f9f9 !important;
+    border-radius: 0px;
+    min-height: 70px;
+    margin-bottom: 0px;
+}
+
+.user-icon {
+    width: 80%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    .user-name {
+        padding: 5px;
+        vertical-align: super;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .app-heading {
+        font-size: 27px;
+        color: #0076bc;
+        font-weight: bold;
+        /* color: #f44336;*/
+    }
+}
+
+.padding-top {
+    padding-top: 10px;
+}

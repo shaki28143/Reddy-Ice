@@ -1,23 +1,21 @@
 <div class="main-content">
 
     <div class="row">
-        <div class="col-md-4">
-            <select class="form-control">
-						  <option value="volvo">301/301</option>
-						  <option value="saab">302/302</option>
-						  <option value="opel">303/303</option>
-						</select>
-        </div>
-
     </div>
     <div class="row">
         <div class="col-md-6">
             <div class="card">
+
                 <div class="card-header" data-background-color="red">
-                    <h4 class="title"> Today's Route </h4>
+                    <h4 class="title">Route Summary </h4>
 
                 </div>
                 <div class="card-content table-responsive">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control" type="date">
+                        </div>
+                    </div>
                     <table class="table">
                         <thead class="text-danger">
                             <tr>
@@ -25,7 +23,7 @@
                                     Route No.
                                 </th>
                                 <th>
-                                    Location/Branch
+                                    Driver Name
                                 </th>
                                 <th>
                                     # of tickets
@@ -38,37 +36,37 @@
                         <tbody>
                             <tr>
                                 <td>801</td>
-                                <td>311</td>
+                                <td>Jack</td>
                                 <td>15</td>
-                                <td class="text-danger">1209.00</td>
+                                <td class="text-danger">129.00</td>
                             </tr>
                             <tr>
                                 <td>811</td>
-                                <td>331</td>
+                                <td>Robert</td>
                                 <td>13</td>
                                 <td class="text-danger">111.99</td>
                             </tr>
                             <tr>
                                 <td>821</td>
-                                <td>351</td>
+                                <td>Billy</td>
                                 <td>11</td>
                                 <td class="text-danger">145.21</td>
                             </tr>
                             <tr>
                                 <td>891</td>
-                                <td>381</td>
+                                <td>John</td>
                                 <td>16</td>
                                 <td class="text-danger">145.21</td>
                             </tr>
                             <tr>
                                 <td>891</td>
-                                <td>381</td>
+                                <td>Peter</td>
                                 <td>18</td>
                                 <td class="text-danger">145.21</td>
                             </tr>
                             <tr>
                                 <td>871</td>
-                                <td>361</td>
+                                <td>Chris</td>
                                 <td>13</td>
                                 <td class="text-danger">145.21</td>
                             </tr>
@@ -100,12 +98,12 @@
                         <div class="col-md-6">
                             <line-chart></line-chart>
                         </div>
-                        <div class="col-md-6">
+                        <!--<div class="col-md-6">
                             <donought-chart></donought-chart>
                         </div>
                         <div class="col-md-6">
                             <line-chart></line-chart>
-                        </div>
+                        </div>-->
                     </div>
 
 

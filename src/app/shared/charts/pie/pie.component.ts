@@ -35,7 +35,7 @@ export class PieChart implements AfterViewInit {
                     "Walmart",
                     "D-Mart",
                     "711",
-                    "BrandFactory"
+                    "Brand"
                 ]
             },
             options: {
