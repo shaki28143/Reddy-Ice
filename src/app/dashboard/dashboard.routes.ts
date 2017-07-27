@@ -10,19 +10,17 @@ import { MapsComponent } from './maps/maps.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 
 export const MODULE_ROUTES: Route[] =[
-    {path:'home', component:DashboardComponent, children:[
-            { path: 'dashboard', component: HomeComponent },
-            { path: 'user', component: UserComponent },
-            { path: 'table', component: TableComponent },
-            { path: 'icons', component: IconsComponent },
-            { path: 'notifications', component: NotificationsComponent },
-            { path: 'typography', component: TypographyComponent },
-            { path: 'maps', component: MapsComponent },
-            { path: 'upgrade', component: UpgradeComponent },
-            { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
-        ]
-    },
-    { path: '', redirectTo: 'home', pathMatch: 'full' }
+    {path:'', component:DashboardComponent, children:[
+        { path: 'dashboard', component: HomeComponent },
+        { path: 'user', component: UserComponent },
+        { path: 'table', component: TableComponent },
+        { path: 'icons', component: IconsComponent },
+        { path: 'notifications', component: NotificationsComponent },
+        { path: 'typography', component: TypographyComponent },
+        { path: 'maps', component: MapsComponent },
+        { path: 'upgrade', component: UpgradeComponent },
+        { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
+    ]}
 ]
 
 export const MODULE_COMPONENTS = [
