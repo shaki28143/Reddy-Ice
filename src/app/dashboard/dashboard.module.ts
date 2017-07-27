@@ -1,3 +1,4 @@
+import { Common } from '../shared/common/common.module';
 import { ChartModule } from '../shared/charts/chart.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { NavbarModule } from '../shared/navbar/navbar.module';
@@ -13,6 +14,7 @@ import {DashboardComponent} from './dashboard.component'
         SidebarModule,
         NavbarModule,
         FooterModule,
+        Common,
         RouterModule.forChild(MODULE_ROUTES)
     ],
     declarations: [ MODULE_COMPONENTS ]

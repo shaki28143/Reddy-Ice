@@ -23,10 +23,12 @@
         "./assets/css/material-dashboard.css",
         "./assets/css/demo.css",
         "../node_modules/font-awesome/css/font-awesome.min.css",
+        "../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
         "styles.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js"
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
         ],
       "environmentSource": "environments/environment.ts",
       "environments": {
