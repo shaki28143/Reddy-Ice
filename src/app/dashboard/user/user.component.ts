@@ -1,14 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
-@Component({
-    selector: 'user-cmp',
-    moduleId: module.id,
-    templateUrl: 'user.component.html'
+@Component({    
+    template: `<router-outlet></router-outlet>`,
 })
 
-export class UserComponent implements OnInit{
-    ngOnInit(){
-        // $.getScript('../../../assets/js/material-dashboard.js');
-
-    }
+export class UserComponent{
+    
 }

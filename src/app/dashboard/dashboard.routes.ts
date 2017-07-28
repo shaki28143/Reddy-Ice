@@ -5,18 +5,32 @@ import { DashboardComponent } from './dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { IconsComponent } from './icons/icons.component';
-import { TableComponent } from './table/table.component';
+import { TableComponent } from './reconciliation/table.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { TypographyComponent } from './typography/typography.component';
 import { CustomerComponent } from './customer/customer.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
-
+import { UserManagementComponent } from './user/user-management/user-management.component';
+import { AddUserComponent } from './user/add-user/add-user.component';
+import { ReconciliationComponent } from './reconciliation/reconciliation/reconciliation.component';
+import { ReconciliationCashComponent } from './reconciliation/reconciliation-cash/reconciliation-cash.component'
 export const MODULE_ROUTES: Route[] = [
     {
         path: '', component: DashboardComponent, children: [
             { path: 'dashboard', component: HomeComponent },
-            { path: 'user', component: UserComponent },
-            { path: 'table', component: TableComponent },
+            {
+                path: 'user', component: UserComponent, children: [
+                    { path: '', component: UserManagementComponent },
+                    { path: 'addUser', component: AddUserComponent }
+                ]
+            },
+            {
+                path: 'reconciliation', component: TableComponent, children: [
+                    { path: '', component: ReconciliationComponent },
+                    { path: 'cash', component: ReconciliationCashComponent }
+
+                ]
+            },
             { path: 'icons', component: IconsComponent },
             { path: 'notifications', component: NotificationsComponent },
             { path: 'typography', component: TypographyComponent },
@@ -44,5 +58,9 @@ export const MODULE_COMPONENTS = [
     UpgradeComponent,
     DashboardComponent,
     CustomerManagementComponent,
-    CustomerDetail
+    CustomerDetail,
+    UserManagementComponent,
+    AddUserComponent,
+    ReconciliationComponent,
+    ReconciliationCashComponent
 ]
