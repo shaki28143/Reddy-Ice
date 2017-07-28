@@ -1,15 +1,32 @@
 import { Component,OnInit } from '@angular/core';
+import { CustomerService } from './customer.service';
 
 declare var google: any;
 
 @Component({
     moduleId: module.id,
     selector: 'maps-cmp',
-    templateUrl: 'maps.component.html'
+    templateUrl: 'customer.component.html',
+    providers: [CustomerService],
+    styleUrls: ['./customer.component.scss']
 })
 
-export class MapsComponent implements OnInit {
+export class CustomerComponent implements OnInit {
+    cardContentWidth : string = '98%';
+    cardContentDetilsWidth : string = '57%';
+    customers: any[];
+    showCustomerDetails: boolean = false;
+    selectedCustomer: any;
+
+    constructor(private _mapService: CustomerService) {  }
+    editCustomer(customer) {
+        this.cardContentWidth = '40%';
+        this.showCustomerDetails = true;
+        this.selectedCustomer = customer;
+    }
+    
     ngOnInit() {
+        this.customers = this._mapService.getCustomers();
         // var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
         // var mapOptions = {
         //   zoom: 13,

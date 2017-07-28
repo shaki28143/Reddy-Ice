@@ -5,72 +5,59 @@
 <div class="main-content">
     <div class="row">
         <div class="col-md-12">
-            <div class="card">
-                <div class="card-header" data-background-color="red">
+            <div class="content clearfix">
+                <div class="dashboard-header">
                     <h4 class="title">Customer Management </h4>
                 </div>
-                <div class="card-content">
-                    <div>
-                        <h4>Distributor : Dist-001</h4>
+                <div class="card" style="margin-left: 10px; margin-top: 15px; float: left;" [style.width]="cardContentWidth">
+                    <div class="card-content">
                         <div>
-                            <div style="display:inline-block;">
-                                <a href="#pablo" class="btn btn-danger btn-round">Set Generic Price</a>
+                            <div [ngClass]="{'customerDetailCollapsed': !showCustomerDetails, 'customerDetailOpen': showCustomerDetails}">
+                            <h4>Distributor : Dist-001</h4>
+                            <div class="buttonStyle">
+                                <div style="">
+                                    <a href="#pablo" class="btn btn-danger btn-round">Set Generic Price</a>
+                                </div>
+                                <div style="margin-left:25px;">
+                                    <a href="#pablo" class="btn btn-danger btn-round">Add Customer</a>
+                                </div>
                             </div>
-                            <div style="display:inline-block;margin-left:25px;">
-                                <a href="#pablo" class="btn btn-danger btn-round">Add Customer</a>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="text-danger">
+                                        <tr>
+                                            <th>
+                                                Customer#
+                                            </th>
+                                            <th>
+                                                Customer Name
+                                            </th>
+                                            <th>
+                                                RI Customer
+                                            </th>
+                                            <th>
+                                                Action
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let customer of customers">
+                                            <td>{{customer.customerId}}</td>
+                                            <td>{{customer.customerName}}</td>
+                                            <td class="text-danger">{{customer.isReddyIceCustomer}}</td>
+                                            <td><span class="glyphicon glyphicon-edit" style="cursor:pointer" (click)="editCustomer(customer)"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Search">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead class="text-danger">
-                                    <tr>
-                                        <th>
-                                            Customer#
-                                        </th>
-                                        <th>
-                                            Customer Name
-                                        </th>
-                                        <th>
-                                            RI Customer
-                                        </th>
-                                        <th>
-                                            Action
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        
-                                        <td>311</td>
-                                        <td>Jack Kelsey</td>
-                                        <td class="text-danger">Y</td>
-                                        <td><span class="glyphicon glyphicon-edit"></span></td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>331</td>
-                                        <td>Shaun Michael</td>
-                                        <td class="text-danger">N</td>
-                                        <td><span class="glyphicon glyphicon-edit"></span></td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>351</td>
-                                        <td>Gill Ambrose</td>
-                                        <td class="text-danger">N</td>
-                                        <td><span class="glyphicon glyphicon-edit"></span></td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>381</td>
-                                        <td>Jill Franko</td>
-                                        <td class="text-danger">Y</td>
-                                        <td><span class="glyphicon glyphicon-edit"></span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                    </div>
+                </div>
+                <div class="card" style="margin-left: 10px; margin-top: 15px;" *ngIf="showCustomerDetails" [style.width]="cardContentDetilsWidth">
+                    <div class="card-content">
+                        <div>Edit Customer Details</div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,22 @@
+[
+  {
+    "customerId": 1,
+    "customerName": "Jack Kelsey",
+    "isReddyIceCustome": "Y"
+  },
+  {
+    "customerId": 2,
+    "customerName": "Shaun Michael",
+    "isReddyIceCustome": "Y"
+  },
+  {
+    "customerId": 3,
+    "customerName": "Gill Ambrose",
+    "isReddyIceCustome": "Y"
+  },
+  {
+    "customerId": 4,
+    "customerName": "Jill Franko",
+    "isReddyIceCustome": "Y"
+  }
+]
