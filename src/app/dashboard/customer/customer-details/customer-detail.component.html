@@ -1,81 +1,10 @@
-<!-- <h1 style="margin-bottom:100%">In progress...</h1> -->
-
-<!-- side main section -->
-
-<div class="main-content">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="content clearfix">
-                <div class="dashboard-header">
-                    <h4 class="title">Customer Management </h4>
-                </div>
-                <div class="card" style="margin-left: 10px; margin-top: 15px; float: left;" [style.width]="cardContentWidth">
-                    <div class="card-content">
-                        <div>
-                            <div [ngClass]="{'customerDetailCollapsed': !showCustomerDetails, 'customerDetailOpen': showCustomerDetails}">
-                            <h4>Distributor : Dist-001</h4>
-                            <div class="buttonStyle">
-                                <div style="">
-                                    <a href="#pablo" class="btn btn-danger btn-round">Set Generic Price</a>
-                                </div>
-                                <div style="margin-left:25px;">
-                                    <a href="#pablo" class="btn btn-danger btn-round">Add Customer</a>
-                                </div>
-                            </div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Search">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead class="text-danger">
-                                        <tr>
-                                            <th>
-                                                Customer#
-                                            </th>
-                                            <th>
-                                                Customer Name
-                                            </th>
-                                            <th>
-                                                RI Customer
-                                            </th>
-                                            <th>
-                                                Action
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr *ngFor="let customer of customers">
-                                            <td>{{customer.customerId}}</td>
-                                            <td>{{customer.customerName}}</td>
-                                            <td class="text-danger">{{customer.isReddyIceCustomer}}</td>
-                                            <td><span class="glyphicon glyphicon-edit" style="cursor:pointer" (click)="editCustomer(customer)"></span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="margin-left: 10px; margin-top: 15px;" *ngIf="showCustomerDetails" [style.width]="cardContentDetilsWidth">
-                    <div class="card-content">
-                        <div>Edit Customer Details</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- side main section -->
-
-<!-- side right section 
-
 <div class="main-content"> 
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div style="margin:15px 25px;">
                     <div style="margin: 20px 0px;display: inline-block;font-size: 18px;">Add New Customer</div>
-                    <a href="#pablo" class="btn btn-danger btn-round" style="float:right;">Save</a>
+                    <a [routerLink]="['../']" class="btn btn-danger btn-round" style="float:right;">Save</a>
                 </div>
                 <div class="card-content">
                     <form>
@@ -279,5 +208,3 @@
         </div>
     </div>
 </div>
-
-<!-- side right section -->

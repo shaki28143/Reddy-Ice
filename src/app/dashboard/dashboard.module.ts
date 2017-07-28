@@ -1,3 +1,4 @@
+import { CustomerService } from './customer/customer.service';
 import { Common } from '../shared/common/common.module';
 import { ChartModule } from '../shared/charts/chart.module';
 import { FooterModule } from '../shared/footer/footer.module';
@@ -7,7 +8,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MODULE_COMPONENTS, MODULE_ROUTES } from './dashboard.routes';
-import {DashboardComponent} from './dashboard.component'
+import { DashboardComponent } from './dashboard.component'
 
 @NgModule({
     imports: [
@@ -19,8 +20,9 @@ import {DashboardComponent} from './dashboard.component'
         CommonModule,
         RouterModule.forChild(MODULE_ROUTES)
     ],
-    declarations: [ MODULE_COMPONENTS ]
+    declarations: [MODULE_COMPONENTS],
+    providers: [CustomerService]
 
 })
 
-export class DashboardModule{}
+export class DashboardModule { }

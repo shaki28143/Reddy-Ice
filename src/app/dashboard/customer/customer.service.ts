@@ -16,7 +16,7 @@ export class CustomerService {
     return [
       {
         "customerId": 1,
-        "customerName": "Jack Kelsey",
+        "customerName": "Jack Kelseyy",
         "isReddyIceCustomer": "Y"
       },
       {
