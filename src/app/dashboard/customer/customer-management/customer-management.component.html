@@ -36,32 +36,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        
-                                        <td>311</td>
-                                        <td>Jack Kelsey</td>
-                                        <td class="text-danger">Y</td>
-                                        <td><span class="glyphicon glyphicon-edit"></span></td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>331</td>
-                                        <td>Shaun Michael</td>
-                                        <td class="text-danger">N</td>
-                                        <td><span class="glyphicon glyphicon-edit"></span></td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>351</td>
-                                        <td>Gill Ambrose</td>
-                                        <td class="text-danger">N</td>
-                                        <td><span class="glyphicon glyphicon-edit"></span></td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <td>381</td>
-                                        <td>Jill Franko</td>
-                                        <td class="text-danger">Y</td>
+                                    <tr *ngFor="let customer of customers">
+                                        <td>{{customer.customerId}}</td>
+                                        <td>{{customer.customerName}}</td>
+                                        <td class="text-danger">{{customer.isReddyIceCustomer}}</td>
                                         <td><span class="glyphicon glyphicon-edit"></span></td>
                                     </tr>
                                 </tbody>
