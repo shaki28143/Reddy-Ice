@@ -1,3 +1,4 @@
+import { ReportComponent } from './report/report.component';
 import { CustomerDetail } from './customer/customer-details/customer-detail.component';
 import { CustomerManagementComponent } from './customer/customer-management/customer-management.component';
 import { Route } from '@angular/router';
@@ -5,7 +6,7 @@ import { DashboardComponent } from './dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { IconsComponent } from './icons/icons.component';
-import { TableComponent } from './table/table.component';
+
 import { NotificationsComponent } from './notifications/notifications.component';
 import { TypographyComponent } from './typography/typography.component';
 import { CustomerComponent } from './customer/customer.component';
@@ -16,10 +17,10 @@ export const MODULE_ROUTES: Route[] = [
         path: '', component: DashboardComponent, children: [
             { path: 'dashboard', component: HomeComponent },
             { path: 'user', component: UserComponent },
-            { path: 'table', component: TableComponent },
+            { path: 'report', component: ReportComponent },
             { path: 'icons', component: IconsComponent },
-            { path: 'notifications', component: NotificationsComponent },
-            { path: 'typography', component: TypographyComponent },
+            { path: 'tracker', component: NotificationsComponent },
+            { path: 'manual-tickets', component: TypographyComponent },
             {
                 path: 'customer', component: CustomerComponent, children: [
                     { path: '', component: CustomerManagementComponent },
@@ -36,7 +37,7 @@ export const MODULE_ROUTES: Route[] = [
 export const MODULE_COMPONENTS = [
     HomeComponent,
     UserComponent,
-    TableComponent,
+    ReportComponent,
     IconsComponent,
     NotificationsComponent,
     TypographyComponent,
