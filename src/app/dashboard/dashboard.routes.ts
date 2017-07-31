@@ -41,7 +41,7 @@ export const MODULE_ROUTES: Route[] = [
                 path: 'customer', component: CustomerComponent, children: [
                     { path: '', component: CustomerManagementComponent },
                     { path: 'add', component: CustomerDetail },
-                    { path: 'edit', component: CustomerDetail }
+                    { path: 'edit/:id', component: CustomerDetail }
                 ]
             },
             { path: 'upgrade', component: UpgradeComponent },

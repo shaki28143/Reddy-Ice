@@ -6,6 +6,7 @@ import { NavbarModule } from '../shared/navbar/navbar.module';
 import { SidebarModule } from '../sidebar/sidebar.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MODULE_COMPONENTS, MODULE_ROUTES } from './dashboard.routes';
 import { DashboardComponent } from './dashboard.component'
@@ -20,6 +21,7 @@ import {UserService} from './user/user.service';
         FooterModule,
         Common,
         CommonModule,
+        FormsModule,
         RouterModule.forChild(MODULE_ROUTES)
     ],
     declarations: [MODULE_COMPONENTS],

@@ -7,13 +7,15 @@
                 </div>
                 <div class="card-content">
                     <div>
-                        <label><b>Distributor : Dist-001</b></label>
-                        <div>
-                            <div style="display:inline-block;">
-                                <a href="#pablo" class="btn btn-danger btn-round">Set Generic Price</a>
-                            </div>
-                            <div style="display:inline-block;margin-left:25px;">
-                                <a href="#pablo" class="btn btn-danger btn-round" [routerLink]="['add']">Add Customer</a>
+                        <div class="customerDetailCollapsed">
+                            <h4>Distributor : Dist-001</h4>
+                            <div class="buttonStyle">
+                                <div style="">
+                                    <a href="#pablo" class="btn btn-danger btn-round">Set Generic Price</a>
+                                </div>
+                                <div style="margin-left:25px;">
+                                    <a href="#pablo" class="btn btn-danger btn-round" [routerLink]="['add']">Add Customer</a>
+                                </div>
                             </div>
                         </div>
                         <input type="text" class="form-control" placeholder="Search">
@@ -48,7 +50,7 @@
                                         <td>{{customer.email}}</td>
                                         <td>{{customer.routeId}}</td>
                                         <td class="text-danger">{{customer.isReddyIceCustomer}}</td>
-                                        <td><a [routerLink]="['./edit']"><span class="glyphicon glyphicon-edit"></span></a></td>
+                                        <td><a [routerLink]="['./edit', customer.customerId]"><span class="glyphicon glyphicon-edit"></span></a></td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -17,6 +17,13 @@ export class CustomerService {
     return this._http.get('./mock-json/customers.json')
     .map(res => res.json());
   }
+  getCustomer(id) {
+    return this._http.get('./mock-json/customers.json')
+    .map(res => {
+      let response = res.json();
+      return response.filter((customer) => customer.customerId === id);
+    });
+  }
 }
   
   // getCustomers() {
