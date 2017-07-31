@@ -7,7 +7,7 @@
                 </div>
                 <div class="card-content">
                     <div>
-                        <h4>Distributor : Dist-001</h4>
+                        <label><b>Distributor : Dist-001</b></label>
                         <div>
                             <div style="display:inline-block;">
                                 <a href="#pablo" class="btn btn-danger btn-round">Set Generic Price</a>
@@ -28,6 +28,12 @@
                                             Customer Name
                                         </th>
                                         <th>
+                                            Email ID
+                                        </th>
+                                        <th>
+                                            Route ID
+                                        </th>
+                                        <th>
                                             RI Customer
                                         </th>
                                         <th>
@@ -39,7 +45,9 @@
                                     <tr *ngFor="let customer of customers">
                                         <td>{{customer.customerId}}</td>
                                         <td>{{customer.customerName}}</td>
-                                        <td class="text-danger">{{customer.isReddyIceCustome}}</td>
+                                        <td>{{customer.email}}</td>
+                                        <td>{{customer.routeId}}</td>
+                                        <td class="text-danger">{{customer.isReddyIceCustomer}}</td>
                                         <td><a [routerLink]="['./edit']"><span class="glyphicon glyphicon-edit"></span></a></td>
                                     </tr>
                                 </tbody>

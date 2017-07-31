@@ -9,7 +9,7 @@ import { IconsComponent } from './icons/icons.component';
 
 import { TableComponent } from './reconciliation/table.component';
 import { NotificationsComponent } from './notifications/notifications.component';
-import { TypographyComponent } from './typography/typography.component';
+import { ManualTicketsComponent } from './manual-tickets/manual-tickets.component';
 import { CustomerComponent } from './customer/customer.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { UserManagementComponent } from './user/user-management/user-management.component';
@@ -24,7 +24,7 @@ export const MODULE_ROUTES: Route[] = [
             {
                 path: 'user', component: UserComponent, children: [
                     { path: '', component: UserManagementComponent },
-                    { path: 'addUser', component: AddUserComponent }
+                    { path: 'add-user', component: AddUserComponent }
                 ]
             },
             {
@@ -36,7 +36,7 @@ export const MODULE_ROUTES: Route[] = [
             { path: 'report', component: ReportComponent },
             { path: 'icons', component: IconsComponent },
             { path: 'tracker', component: NotificationsComponent },
-            { path: 'manual-tickets', component: TypographyComponent },
+            { path: 'manual-tickets', component: ManualTicketsComponent },
             {
                 path: 'customer', component: CustomerComponent, children: [
                     { path: '', component: CustomerManagementComponent },
@@ -56,7 +56,7 @@ export const MODULE_COMPONENTS = [
     ReportComponent,
     IconsComponent,
     NotificationsComponent,
-    TypographyComponent,
+    ManualTicketsComponent,
     CustomerComponent,
     UpgradeComponent,
     DashboardComponent,

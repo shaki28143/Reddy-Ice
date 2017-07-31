@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'typography-cmp',
     moduleId: module.id,
-    templateUrl: 'typography.component.html'
+    templateUrl: 'manual-tickets.component.html'
 })
 
-export class TypographyComponent{}
+export class ManualTicketsComponent{}

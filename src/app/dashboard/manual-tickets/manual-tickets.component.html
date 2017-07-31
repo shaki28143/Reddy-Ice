@@ -3,14 +3,14 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header" data-background-color="red">
-                    <h4 class="title">Create New User</h4>
+                    <h4 class="title">Users</h4>
                 </div>
                 <div class="col-md-12" style="margin-top:10px;">
                     <div class="col-md-10" style="padding-left:0px;margin-top:8px;">
                         <p class="category" style="margin-top:15px;margin-left: 20px;"><b>Create User</b></p>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-danger btn-round" onclick="demo.showNotification('top','right')" [routerLink]="['../']">Save</button>
+                        <button class="btn btn-danger btn-round" onclick="demo.showNotification('top','right')">Save</button>
                     </div>
                 </div>
                 <div class="card-content table-responsive">
@@ -72,19 +72,47 @@
                         <table class="table">
                             <thead class="text-danger">
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Route ID</th>
                                     <th>Location</th>
                                     <th>Branch</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr *ngFor="let branch of branches">
-                                    <td>{{branch.id}}</td>
-                                    <td>{{branch.Route_id}}</td>
-                                    <td>{{branch.Location}}</td>
-                                    <td>{{branch.Branch}}</td>
+                                <tr>
+                                    <td>311</td>
+                                    <td>311</td>
+                                    <td>
+                                        <span class="glyphicon glyphicon-edit"></span>
+                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>322</td>
+                                    <td>322</td>
+                                    <td>
+                                        <span class="glyphicon glyphicon-edit"></span>
+                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>333</td>
+                                    <td>333</td>
+                                    <td>
+                                        <span class="glyphicon glyphicon-edit"></span>
+                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>334</td>
+                                    <td>334</td>
+                                    <td>
+                                        <span class="glyphicon glyphicon-edit"></span>
+                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>335</td>
+                                    <td>335</td>
                                     <td>
                                         <span class="glyphicon glyphicon-edit"></span>
                                         <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
@@ -96,5 +124,4 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        

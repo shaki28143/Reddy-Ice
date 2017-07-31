@@ -7,5 +7,5 @@ export const ROUTES: RouteInfo[] = [
     { path: 'reconciliation', title: 'Reconciliation',  icon:'content_paste', class: '' },
     { path: 'manual-tickets', title: 'Manual Ticket',  icon:'library_books', class: '' },
     { path: 'report', title: 'Reports',  icon:'assessment', class: '' },   
-    { path: 'tracker', title: 'Tracker',  icon:'notifications', class: '' }
+    { path: 'tracker', title: 'Tracker',  icon:'trending_up', class: '' }
 ];

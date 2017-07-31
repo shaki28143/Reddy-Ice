@@ -1,22 +1,44 @@
 [
   {
     "customerId": 1,
-    "customerName": "Jack Kelseyyy",
-    "isReddyIceCustome": "Y"
+    "customerName": "Jack Kelsey",
+    "email": "jackkelsey@reddyice.com",
+    "routeId": 812,
+    "isReddyIceCustomer": "Y"
   },
   {
     "customerId": 2,
     "customerName": "Shaun Michael",
-    "isReddyIceCustome": "Y"
+    "email": "shaunmichael@reddyice.com",
+    "routeId": 811,
+    "isReddyIceCustomer": "Y"
   },
   {
     "customerId": 3,
     "customerName": "Gill Ambrose",
-    "isReddyIceCustome": "Y"
+    "email": "gillambrose@reddyice.com",
+    "routeId": 816,
+    "isReddyIceCustomer": "Y"
   },
   {
     "customerId": 4,
     "customerName": "Jill Franko",
-    "isReddyIceCustome": "Y"
+    "email": "jillfranko@reddyice.com",
+    "routeId": 813,
+    "isReddyIceCustomer": "Y"
+  },
+  {
+    "customerId": 5,
+    "customerName": "Jack Dawson",
+    "email": "jackdawson@reddyice.com",
+    "routeId": 816,
+    "isReddyIceCustomer": "Y"
+  },
+  {
+    "customerId": 6,
+    "customerName": "Bill Goldberg",
+    "email": "billgoldberg@reddyice.com",
+    "routeId": 813,
+    "isReddyIceCustomer": "Y"
   }
 ]
