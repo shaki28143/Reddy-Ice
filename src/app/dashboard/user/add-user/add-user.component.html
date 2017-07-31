@@ -70,50 +70,22 @@
                             <table class="table">
                                 <thead class="text-danger">
                                     <tr>
+                                        <th>ID</th>
+                                        <th>Route ID</th>
                                         <th>Location</th>
                                         <th>Branch</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>311</td>
-                                        <td>311</td>
+                                    <tr *ngFor="let branch of branches">
+                                        <td>{{branch.id}}</td>
+                                        <td>{{branch.Route_id}}</td>
+                                        <td>{{branch.Location}}</td>
+                                        <td>{{branch.Branch}}</td>
                                         <td>
-                                            <span class="glyphicon glyphicon-edit" style="font-size:20px;"></span>
-                                            <span class="glyphicon glyphicon-trash" style="font-size:20px;margin-left:20px;"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>322</td>
-                                        <td>322</td>
-                                        <td>
-                                            <span class="glyphicon glyphicon-edit" style="font-size:20px;"></span>
-                                            <span class="glyphicon glyphicon-trash" style="font-size:20px;margin-left:20px;"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>333</td>
-                                        <td>333</td>
-                                        <td>
-                                            <span class="glyphicon glyphicon-edit" style="font-size:20px;"></span>
-                                            <span class="glyphicon glyphicon-trash" style="font-size:20px;margin-left:20px;"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>334</td>
-                                        <td>334</td>
-                                        <td>
-                                            <span class="glyphicon glyphicon-edit" style="font-size:20px;"></span>
-                                            <span class="glyphicon glyphicon-trash" style="font-size:20px;margin-left:20px;"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>335</td>
-                                        <td>335</td>
-                                        <td>
-                                            <span class="glyphicon glyphicon-edit" style="font-size:20px;"></span>
-                                            <span class="glyphicon glyphicon-trash" style="font-size:20px;margin-left:20px;"></span>
+                                            <span class="glyphicon glyphicon-edit"></span>
+                                            <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
                                         </td>
                                     </tr>
                                 </tbody>

@@ -23,47 +23,19 @@
                         <table class="table">
                             <thead class="text-danger">
                                 <tr>
+                                    <th>ID</th>
+                                    <th>Route ID</th>
                                     <th>User Name</th>
                                     <th>Role</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>NKumar</td>
-                                    <td>Admin</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Adhiraj</td>
-                                    <td>Admin</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Shakir</td>
-                                    <td>Driver</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Alok</td>
-                                    <td>Driver</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Rishabh</td>
-                                    <td>Admin</td>
+                                <tr *ngFor="let user of users">
+                                    <td>{{user.id}}</td>
+                                    <td>{{user.Route_id}}</td>
+                                    <td>{{user.Username}}</td>
+                                    <td>{{user.Role}}</td>
                                     <td>
                                         <span class="glyphicon glyphicon-edit"></span>
                                         <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>

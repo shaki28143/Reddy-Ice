@@ -9,6 +9,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MODULE_COMPONENTS, MODULE_ROUTES } from './dashboard.routes';
 import { DashboardComponent } from './dashboard.component'
+import { ReconciliationService } from './reconciliation/reconciliation.service';
+import {UserService} from './user/user.service';
 
 @NgModule({
     imports: [
@@ -21,7 +23,7 @@ import { DashboardComponent } from './dashboard.component'
         RouterModule.forChild(MODULE_ROUTES)
     ],
     declarations: [MODULE_COMPONENTS],
-    providers: [CustomerService]
+    providers: [CustomerService,ReconciliationService,UserService]
 
 })
 

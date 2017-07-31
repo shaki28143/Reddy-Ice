@@ -124,7 +124,7 @@
                     <div class="col-md-12" style="margin-top:30px;">
                         <div class="col-md-12" style="margin-top:14px;">
                             <span class="glyphicon glyphicon-minus-sign" style="font-size:20px;"></span>
-                            <label style="margin-left: 20px;">Cash Reconciliation</label>
+                            <label style="margin-left: 20px;">Unit Reconciliation</label>
                         </div>
                     </div>
 
@@ -141,45 +141,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>CockTail</td>
-                                    <td>112</td>
-                                    <td>12</td>
-                                    <td>0</td>
-                                    <td>12</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>CockTail</td>
-                                    <td>112</td>
-                                    <td>12</td>
-                                    <td>0</td>
-                                    <td>12</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>CockTail</td>
-                                    <td>112</td>
-                                    <td>12</td>
-                                    <td>0</td>
-                                    <td>12</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>CockTail</td>
-                                    <td>112</td>
-                                    <td>12</td>
-                                    <td>0</td>
-                                    <td>12</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>CockTail</td>
-                                    <td>112</td>
-                                    <td>12</td>
-                                    <td>0</td>
-                                    <td>12</td>
-                                    <td>0.00</td>
+                                <tr *ngFor="let product of products">
+                                    <td>{{product.product}}</td>
+                                    <td>{{product.load}}</td>
+                                    <td>{{product.return}}</td>
+                                    <td>{{product.damage}}</td>
+                                    <td>{{product.sale}}</td>
+                                    <td>{{product.over_short}}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -187,7 +155,7 @@
                     <div class="col-md-12" style="margin-top:30px;">
                         <div class="col-md-12" style="margin-top:14px;">
                             <span class="glyphicon glyphicon-minus-sign" style="font-size:20px;"></span>
-                            <label style="margin-left: 20px;">Cash Reconciliation</label>
+                            <label style="margin-left: 20px;">Ticket Details</label>
                         </div>
                     </div>
                     <div class="col-md-12" style="margin-left:10px;">
@@ -204,50 +172,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>121</td>
-                                    <td>WallMart</td>
-                                    <td>2121212</td>
-                                    <td>20.00</td>
-                                    <td>20.00</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>121</td>
-                                    <td>WallMart</td>
-                                    <td>2121212</td>
-                                    <td>20.00</td>
-                                    <td>20.00</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>121</td>
-                                    <td>WallMart</td>
-                                    <td>2121212</td>
-                                    <td>20.00</td>
-                                    <td>20.00</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>121</td>
-                                    <td>WallMart</td>
-                                    <td>2121212</td>
-                                    <td>20.00</td>
-                                    <td>20.00</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                </tr>
-                                <tr>
-                                    <td>121</td>
-                                    <td>WallMart</td>
-                                    <td>2121212</td>
-                                    <td>20.00</td>
-                                    <td>20.00</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
+                                <tr *ngFor="let ticket of ticket_details">
+                                    <td>{{ticket.customer_id}}</td>
+                                    <td>{{ticket.Customer}}</td>
+                                    <td>{{ticket.ticket}}</td>
+                                    <td>{{ticket.invoice_amount}}</td>
+                                    <td>{{ticket.cash}}</td>
+                                    <td>{{ticket.check}}</td>
+                                    <td>{{ticket.charge}}</td>
                                 </tr>
                             </tbody>
                         </table>

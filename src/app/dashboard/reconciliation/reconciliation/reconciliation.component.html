@@ -31,53 +31,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>801</td>
-                                    <td>311</td>
-                                    <td>15</td>
-                                    <td>1209.00</td>
+                                <tr *ngFor="let detail of details">
+                                    <td>{{detail.Route_Number}}</td>
+                                    <td>{{detail.Location_Branch}}</td>
+                                    <td>{{detail.Number_of_tickets}}</td>
+                                    <td>{{detail.Amount}}</td>
                                     <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>802</td>
-                                    <td>312</td>
-                                    <td>14</td>
-                                    <td>1209.00</td>
-                                    <td>
-                                        <a [routerLink]="['./cash']"><span class="glyphicon glyphicon-edit"></span></a>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>803</td>
-                                    <td>313</td>
-                                    <td>13</td>
-                                    <td>1209.00</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>804</td>
-                                    <td>314</td>
-                                    <td>12</td>
-                                    <td>1209.00</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>805</td>
-                                    <td>315</td>
-                                    <td>11</td>
-                                    <td>1209.00</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
+                                        <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
                                         <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
                                     </td>
                                 </tr>
