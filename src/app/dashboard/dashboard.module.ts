@@ -1,5 +1,6 @@
 import { DASHBOARD_PIPE } from './dashboard.pipes';
 import { CustomerService } from './customer/customer.service';
+import { TicketService } from './manual-tickets/manual-tickets.service';
 import { Common } from '../shared/common/common.module';
 import { ChartModule } from '../shared/charts/chart.module';
 import { FooterModule } from '../shared/footer/footer.module';
@@ -26,7 +27,7 @@ import { UserService } from './user/user.service';
         RouterModule.forChild(MODULE_ROUTES)
     ],
     declarations: [MODULE_COMPONENTS, DASHBOARD_PIPE],
-    providers: [CustomerService, ReconciliationService, UserService]
+    providers: [CustomerService, ReconciliationService, UserService, TicketService]
 
 })
 

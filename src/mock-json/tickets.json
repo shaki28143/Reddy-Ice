@@ -1,0 +1,44 @@
+[
+  {
+    "ticketNumber": 6776237,
+    "customerId": 123,
+    "amount": "$200.00",
+    "status": "Pending Approval"
+  },
+  {
+    "ticketNumber": 6776237,
+    "customerId": 123,
+    "amount": "$128.00",
+    "status": "Approved"
+  },
+  {
+    "ticketNumber": 6776247,
+    "customerId": 123,
+    "amount": "$140.00",
+    "status": "Pending Approval"
+  },
+  {
+    "ticketNumber": 6776257,
+    "customerId": 123,
+    "amount": "$95.00",
+    "status": "Approved"
+  },
+  {
+    "ticketNumber": 6776267,
+    "customerId": 123,
+    "amount": "$85.00",
+    "status": "Approved"
+  },
+  {
+    "ticketNumber": 6776277,
+    "customerId": 123,
+    "amount": "$187.00",
+    "status": "Pending Approval"
+  },
+  {
+    "ticketNumber": 6776287,
+    "customerId": 123,
+    "amount": "$200",
+    "status": "Pending Approval"
+  }
+]

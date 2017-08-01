@@ -1,0 +1,14 @@
+.manual-ticket-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.date-picker-container {
+  width: 38%;
+}
+
+.manual-ticket-header-container .date-picker-container input[type="text"] {
+  background-image: none !important;
+}

@@ -5,7 +5,7 @@ declare var $:any;
 @Component({
     selector:'date-picker',
     template:`
-        <div><input #datePicker type="text" class="form-control"></div>
+        <div><input #datePicker type="text" class="form-control date-picker"></div>
     `
 })
 export class DatePicker implements AfterViewInit{

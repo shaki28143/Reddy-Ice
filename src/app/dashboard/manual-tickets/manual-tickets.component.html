@@ -5,19 +5,21 @@
                 <div class="card-header" data-background-color="red">
                     <h4 class="title">Reconciliation</h4>
                 </div>
-                <div class="card-content">
+                <div class="card-content table-responsive">
                     <div class="row">
-                        <div class="col-md-6" style="margin-top: 25px;">
-                            
+                        <div class="col-md-6">
+
                         </div>
-                        <div class="col-md-3" style="margin-top: 25px;">
-                             <date-picker></date-picker>
-                        </div>
-                        <div class="col-md-3" style="text-align:center;">
-                             <a href="#pablo" class="btn btn-danger btn-round" [routerLink]="['add']">Add Customer</a>
+                        <div class="manual-ticket-header-container">
+                          <div class="date-picker-container">
+                              <date-picker></date-picker>
+                          </div>
+                          <div class="" style="text-align:center;">
+                              <a href="#pablo" class="btn btn-danger btn-round" [routerLink]="['add']">Create Ticket</a>
+                          </div>
                         </div>
                     </div>
-                    <table class="table" style="margin-top: 25px;">
+                    <table class="table table-hover" style="margin-top: 25px;">
                         <thead class="text-danger">
                             <tr>
                                 <th>Ticket Number</th>
@@ -28,61 +30,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>6776237</td>
-                                <td>2123</td>
-                                <td>128.00$</td>
-                                <td>Pending Approval</td>
-                                <td>
-                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
-                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6776241</td>
-                                <td>2122</td>
-                                <td>28.00$</td>
-                                <td>Approved</td>
-                                <td>
-                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
-                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6776837</td>
-                                <td>2124</td>
-                                <td>98.00$</td>
-                                <td>Pending Approval</td>
-                                <td>
-                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
-                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6776435</td>
-                                <td>2126</td>
-                                <td>172.00$</td>
-                                <td>Approved</td>
-                                <td>
-                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
-                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6326237</td>
-                                <td>2125</td>
-                                <td>18.00$</td>
-                                <td>Pending Approval</td>
-                                <td>
-                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
-                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6722237</td>
-                                <td>2127</td>
-                                <td>12.00$</td>
-                                <td>Approved</td>
+                            <tr *ngFor="let ticket of tickets">
+                                <td>{{ticket.ticketNumber}}</td>
+                                <td>{{ticket.customerId}}</td>
+                                <td>{{ticket.amount}}</td>
+                                <td>{{ticket.status}}</td>
                                 <td>
                                     <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
                                     <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
