@@ -20,23 +20,23 @@
                         </div>
                         <input type="text" class="form-control" placeholder="Search" [(ngModel)]="filterText" >
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table" #customer>
                                 <thead class="text-danger">
                                     <tr>
                                         <th>
-                                            Customer#
+                                            <span (click)="customer.sortField = 'customerId';customer.isAsc=!customer.isAsc;">Customer#</span>
                                         </th>
                                         <th>
-                                            Customer Name
+                                            <span (click)="customer.sortField = 'customerName';customer.isAsc=!customer.isAsc;">Customer Name</span>
                                         </th>
                                         <th>
-                                            Email ID
+                                            <span (click)="customer.sortField = 'email';customer.isAsc=!customer.isAsc;">Email ID</span>
                                         </th>
                                         <th>
-                                            Route ID
+                                            <span (click)="customer.sortField = 'routeId';customer.isAsc=!customer.isAsc;">Route ID</span>
                                         </th>
                                         <th>
-                                            RI Customer
+                                            <span (click)="customer.sortField = 'isReddyIceCustomer';customer.isAsc=!customer.isAsc;">RI Customer</span>
                                         </th>
                                         <th>
                                             Action
@@ -44,7 +44,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr *ngFor="let customer of customers | customerSearch:filterText">
+                                    <tr *ngFor="let customer of customers | customerSearch:filterText | sortCustomer:customer.sortField:customer.isAsc">
                                         <td>{{customer.customerId}}</td>
                                         <td>{{customer.customerName}}</td>
                                         <td>{{customer.email}}</td>
