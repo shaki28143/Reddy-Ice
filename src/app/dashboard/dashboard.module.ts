@@ -1,3 +1,4 @@
+import { DASHBOARD_PIPE } from './dashboard.pipes';
 import { CustomerService } from './customer/customer.service';
 import { Common } from '../shared/common/common.module';
 import { ChartModule } from '../shared/charts/chart.module';
@@ -11,7 +12,7 @@ import { RouterModule } from '@angular/router';
 import { MODULE_COMPONENTS, MODULE_ROUTES } from './dashboard.routes';
 import { DashboardComponent } from './dashboard.component'
 import { ReconciliationService } from './reconciliation/reconciliation.service';
-import {UserService} from './user/user.service';
+import { UserService } from './user/user.service';
 
 @NgModule({
     imports: [
@@ -24,8 +25,8 @@ import {UserService} from './user/user.service';
         FormsModule,
         RouterModule.forChild(MODULE_ROUTES)
     ],
-    declarations: [MODULE_COMPONENTS],
-    providers: [CustomerService,ReconciliationService,UserService]
+    declarations: [MODULE_COMPONENTS, DASHBOARD_PIPE],
+    providers: [CustomerService, ReconciliationService, UserService]
 
 })
 

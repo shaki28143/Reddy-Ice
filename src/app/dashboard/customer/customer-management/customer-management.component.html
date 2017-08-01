@@ -18,7 +18,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="Search" [(ngModel)]="filterText" >
                         <div class="table-responsive">
                             <table class="table">
                                 <thead class="text-danger">
@@ -44,7 +44,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr *ngFor="let customer of customers">
+                                    <tr *ngFor="let customer of customers | customerSearch:filterText">
                                         <td>{{customer.customerId}}</td>
                                         <td>{{customer.customerName}}</td>
                                         <td>{{customer.email}}</td>

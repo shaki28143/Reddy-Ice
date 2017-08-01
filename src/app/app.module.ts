@@ -11,6 +11,8 @@ const MODULE_ROUTES: Route[] =[
     { path:'', redirectTo:'home', pathMatch:'full'}
 ]
 
+
+
 @NgModule({
   declarations: [
     AppComponent
