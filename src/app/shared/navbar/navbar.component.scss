@@ -19,17 +19,35 @@
        padding: 8px 0px;
        vertical-align: bottom;
     }
-   
+
     .app-heading {
         font-size: 27px;
         color: #0076bc;
         font-weight: bold;
         /* color: #f44336;*/
     }
+}
 
-    @media only screen and (max-width: 990px) {
-        display: none;
-    }
+.app-title {
+  display: none;
+}
+@media only screen and (max-width: 990px)
+{
+  .user-icon {
+    display: none;
+  }
+  .app-title {
+    display: block;
+    float: left;
+    width: auto;
+    margin: 0;
+    top: 5px;
+  }
+  .app-heading {
+    font-size: 27px;
+    color: #0076bc;
+    font-weight: bold;
+  }
 }
 
 

@@ -8,16 +8,16 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class CustomerDetail implements OnInit{
     isReadOnly : boolean = false;
     selectedId : number;
-    public title : string = "Add New Customer";
+    public title : string = 'Add New Customer';
     public customer : Customer = {
-        customerName : "",
+        customerName : '',
         customerId: null,
-        address: "",
-        city: "",
-        state: "",
-        zip: "",
+        address: '',
+        city: '',
+        state: '',
+        zip: '',
         phone: null,
-        email: ""
+        email: ''
     }
     constructor(
         private route: ActivatedRoute,
