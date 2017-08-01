@@ -8,37 +8,55 @@ export class UserService{
                 "id":"111",
                 "Route_id":"801",
                 "Username":"Adhiraj",
-                "Role":"Driver"
+                "Lastname":"Singh",
+                "Role":"Driver",
+                "Phone":"1111111111",
+                "email": "adhiraj@reddyice.com",
             },
             {
                 "id":"112",
                 "Route_id":"802",
                 "Username":"Rishabh",
-                "Role":"Driver"
+                "Lastname":"Rastogi",
+                "Role":"Driver",
+                "Phone":"1111111111",
+                "email": "rishabh@reddyice.com",
             },
             {
                 "id":"113",
                 "Route_id":"803",
                 "Username":"Shahkir",
-                "Role":"Driver"
+                "Lastname":"Hussain",
+                "Role":"Driver",
+                "Phone":"1111111111",
+                "email": "shahkir@reddyice.com",
             },
             {
                 "id":"114",
                 "Route_id":"804",
                 "Username":"Alok",
-                "Role":"Admin"
+                "Lastname":"Kumar",
+                "Role":"Admin",
+                "Phone":"1111111111",
+                "email": "alok@reddyice.com",
             },
             {
                 "id":"115",
                 "Route_id":"805",
                 "Username":"Rahul",
-                "Role":"Admin"
+                "Lastname":"P",
+                "Role":"Admin",
+                "Phone":"1111111111",
+                "email": "rahul@reddyice.com",
             },
             {
                 "id":"116",
                 "Route_id":"806",
                 "Username":"Vipin",
-                "Role":"Admin"
+                "Lastname":"Kumar",
+                "Role":"Admin",
+                "Phone":"1111111111",
+                "email": "Vipin@reddyice.com",
             },
         ]
     }

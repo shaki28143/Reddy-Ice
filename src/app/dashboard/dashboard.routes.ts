@@ -13,7 +13,7 @@ import { ManualTicketsComponent } from './manual-tickets/manual-tickets.componen
 import { CustomerComponent } from './customer/customer.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { UserManagementComponent } from './user/user-management/user-management.component';
-import { AddUserComponent } from './user/add-user/add-user.component';
+import { AddUserComponent } from './user/user-details/user-details.component';
 import { ReconciliationComponent } from './reconciliation/reconciliation/reconciliation.component';
 import { ReconciliationCashComponent } from './reconciliation/reconciliation-cash/reconciliation-cash.component'
 export const MODULE_ROUTES: Route[] = [
@@ -24,7 +24,10 @@ export const MODULE_ROUTES: Route[] = [
             {
                 path: 'user', component: UserComponent, children: [
                     { path: '', component: UserManagementComponent },
-                    { path: 'add-user', component: AddUserComponent }
+                    { path: 'add-user', component: AddUserComponent},
+                    {path:'edit/:id',component:AddUserComponent, data:{
+                        isEdit: true
+                    } }
                 ]
             },
             {

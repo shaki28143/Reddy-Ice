@@ -11,53 +11,54 @@
                             <label><b>Create User</b></label>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-danger btn-round" onclick="demo.showNotification('top','right')" [routerLink]="['../']">Save</button>
+                            <a *ngIf="isReadOnly" class="btn btn-danger btn-round" style="float:right;" (click)="onEdit()">Edit</a>
+                            <a *ngIf="!isReadOnly" [routerLink]="userId ? ['../'] : ['../../']" class="btn btn-danger btn-round" style="float:right;">Save</a>
                         </div>
                     </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group form-black label-floating is-empty">
-                                    <span class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group form-black label-floating is-empty">
+                                <span class="col-md-3">
                                             <label class="control-label">First Name</label>
                                         </span>
-                                    <span class="col-md-9">
-                                            <input type="text" class="form-control">
-                                        </span>
-                                </div>
+                                <span class="col-md-9">
+                                    <input type="text" class="form-control" name="Username" [(ngModel)]="user.Username" [readonly]="isReadOnly" required>
+                                </span>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group form-black label-floating is-empty">
-                                    <span class="col-md-3">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-black label-floating is-empty">
+                                <span class="col-md-3">
                                             <label class="control-label">Last Name</label>
                                         </span>
-                                    <span class="col-md-9">
-                                            <input type="text" class="form-control">
+                                <span class="col-md-9">
+                                            <input type="text" class="form-control" name="Lastname" [(ngModel)]="user.Lastname" [readonly]="isReadOnly" required>
                                         </span>
-                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group form-black label-floating is-empty">
-                                    <span class="col-md-3">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group form-black label-floating is-empty">
+                                <span class="col-md-3">
                                             <label class="control-label">Phone</label>
                                         </span>
-                                    <span class="col-md-9">
-                                            <input type="text" class="form-control">
+                                <span class="col-md-9">
+                                            <input type="text" class="form-control" name="Phone" [(ngModel)]="user.Phone" [readonly]="isReadOnly" required>
                                         </span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group form-black label-floating is-empty">
-                                    <span class="col-md-3">
-                                            <label class="control-label">Email</label>
-                                        </span>
-                                    <span class="col-md-9">
-                                            <input type="text" class="form-control">
-                                        </span>
-                                </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-black label-floating is-empty">
+                                <span class="col-md-3">
+                                            <label class="control-label">Email</label>
+                                        </span>
+                                <span class="col-md-9">
+                                            <input type="text" class="form-control" name="email" [(ngModel)]="user.email" [readonly]="isReadOnly" required>
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-10">
                             <label style="margin-top:29px;"><b>List of mapped Location/branch</b></label>
