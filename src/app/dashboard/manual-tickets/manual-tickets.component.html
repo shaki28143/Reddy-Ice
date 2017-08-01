@@ -3,125 +3,96 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header" data-background-color="red">
-                    <h4 class="title">Users</h4>
+                    <h4 class="title">Reconciliation</h4>
                 </div>
-                <div class="col-md-12" style="margin-top:10px;">
-                    <div class="col-md-10" style="padding-left:0px;margin-top:8px;">
-                        <p class="category" style="margin-top:15px;margin-left: 20px;"><b>Create User</b></p>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-danger btn-round" onclick="demo.showNotification('top','right')">Save</button>
-                    </div>
-                </div>
-                <div class="card-content table-responsive">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group form-black label-floating is-empty">
-                                    <span class="col-md-3">
-                                            <label class="control-label">First Name</label>
-                                        </span>
-                                    <span class="col-md-9">
-                                            <input type="text" class="form-control">
-                                        </span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group form-black label-floating is-empty">
-                                    <span class="col-md-3">
-                                            <label class="control-label">Last Name</label>
-                                        </span>
-                                    <span class="col-md-9">
-                                            <input type="text" class="form-control">
-                                        </span>
-                                </div>
-                            </div>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col-md-6" style="margin-top: 25px;">
+                            
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group form-black label-floating is-empty">
-                                    <span class="col-md-3">
-                                            <label class="control-label">Phone</label>
-                                        </span>
-                                    <span class="col-md-9">
-                                            <input type="text" class="form-control">
-                                        </span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group form-black label-floating is-empty">
-                                    <span class="col-md-3">
-                                            <label class="control-label">Email</label>
-                                        </span>
-                                    <span class="col-md-9">
-                                            <input type="text" class="form-control">
-                                        </span>
-                                </div>
-                            </div>
+                        <div class="col-md-3" style="margin-top: 25px;">
+                             <date-picker></date-picker>
+                        </div>
+                        <div class="col-md-3" style="text-align:center;">
+                             <a href="#pablo" class="btn btn-danger btn-round" [routerLink]="['add']">Add Customer</a>
                         </div>
                     </div>
-                    <div class="col-md-12" style="margin-top:20px;padding-left:0px;padding-right:0px">
-                        <div class="col-md-10">
-                            <p class="category" style="margin-top:15px;margin-left: 1px;"><b>List of mapped Location/branch</b></p>
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-danger btn-round" onclick="demo.showNotification('top','right')">ADD Location</button>
-                        </div>
-                    </div>
-                    <div class="card-content table-responsive">
-                        <table class="table">
-                            <thead class="text-danger">
-                                <tr>
-                                    <th>Location</th>
-                                    <th>Branch</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>311</td>
-                                    <td>311</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>322</td>
-                                    <td>322</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>333</td>
-                                    <td>333</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>334</td>
-                                    <td>334</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>335</td>
-                                    <td>335</td>
-                                    <td>
-                                        <span class="glyphicon glyphicon-edit"></span>
-                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <table class="table" style="margin-top: 25px;">
+                        <thead class="text-danger">
+                            <tr>
+                                <th>Ticket Number</th>
+                                <th>Customer</th>
+                                <th>Amount($)</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6776237</td>
+                                <td>2123</td>
+                                <td>128.00$</td>
+                                <td>Pending Approval</td>
+                                <td>
+                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
+                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6776241</td>
+                                <td>2122</td>
+                                <td>28.00$</td>
+                                <td>Approved</td>
+                                <td>
+                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
+                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6776837</td>
+                                <td>2124</td>
+                                <td>98.00$</td>
+                                <td>Pending Approval</td>
+                                <td>
+                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
+                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6776435</td>
+                                <td>2126</td>
+                                <td>172.00$</td>
+                                <td>Approved</td>
+                                <td>
+                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
+                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6326237</td>
+                                <td>2125</td>
+                                <td>18.00$</td>
+                                <td>Pending Approval</td>
+                                <td>
+                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
+                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6722237</td>
+                                <td>2127</td>
+                                <td>12.00$</td>
+                                <td>Approved</td>
+                                <td>
+                                    <a [routerLink]="['cash']"><span class="glyphicon glyphicon-edit"></span></a>
+                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>
-        
+    </div>
+</div>

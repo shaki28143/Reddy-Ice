@@ -5,16 +5,15 @@
                 <div class="card-header" data-background-color="red">
                     <h4 class="title">Create New User</h4>
                 </div>
-                <div class="col-md-12" style="margin-top:10px;">
-                    <div class="col-md-10" style="padding-left:0px;margin-top:8px;">
-                        <p class="category" style="margin-top:15px;margin-left: 20px;"><b>Create User</b></p>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-danger btn-round" onclick="demo.showNotification('top','right')" [routerLink]="['../']">Save</button>
-                    </div>
-                </div>
                 <div class="card-content table-responsive">
-                    <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <label><b>Create User</b></label>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-danger btn-round" onclick="demo.showNotification('top','right')" [routerLink]="['../']">Save</button>
+                        </div>
+                    </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group form-black label-floating is-empty">
@@ -59,10 +58,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12" style="margin-top:20px;padding-left:0px;padding-right:0px">
+                    <div class="row">
                         <div class="col-md-10">
-                            <p class="category" style="margin-top:15px;margin-left: 1px;"><b>List of mapped Location/branch</b></p>
+                            <label style="margin-top:29px;"><b>List of mapped Location/branch</b></label>
                         </div>
                         <div class="col-md-2">
                             <button class="btn btn-danger btn-round" onclick="demo.showNotification('top','right')">ADD Location</button>

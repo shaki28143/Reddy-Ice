@@ -9,7 +9,7 @@
                 </div>
                 <div class="card-content table-responsive">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="margin-top:17px;">
                             <label><b>Distributor : Dist-001</b></label>
                         </div>
                     </div>
@@ -21,30 +21,31 @@
                             <a href="#pablo" class="btn btn-danger btn-round" [routerLink]="['add-user']">Create user</a>
                         </div>
                     </div>
-                    <table class="table">
-                        <thead class="text-danger">
-                            <tr>
-                                <th>ID</th>
-                                <th>Route ID</th>
-                                <th>User Name</th>
-                                <th>Role</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr *ngFor="let user of users">
-                                <td>{{user.id}}</td>
-                                <td>{{user.Route_id}}</td>
-                                <td>{{user.Username}}</td>
-                                <td>{{user.Role}}</td>
-                                <td>
-                                    <span class="glyphicon glyphicon-edit"></span>
-                                    <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
+                    <div class="row">
+                        <table class="table">
+                            <thead class="text-danger">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Route ID</th>
+                                    <th>User Name</th>
+                                    <th>Role</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let user of users">
+                                    <td>{{user.id}}</td>
+                                    <td>{{user.Route_id}}</td>
+                                    <td>{{user.Username}}</td>
+                                    <td>{{user.Role}}</td>
+                                    <td>
+                                        <span class="glyphicon glyphicon-edit"></span>
+                                        <span class="glyphicon glyphicon-trash" style="margin-left:20px;"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
