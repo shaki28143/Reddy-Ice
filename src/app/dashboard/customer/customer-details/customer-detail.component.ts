@@ -22,9 +22,12 @@ export class CustomerDetail implements OnInit{
     constructor(
         private route: ActivatedRoute,
         private customerService:CustomerService
-    ) {
-        
+    ) {}
+
+    onEdit() {
+        this.isReadOnly = false;
     }
+
     ngOnInit(){
         this.route.params.subscribe(params => {
             this.selectedId = +params['id']; // (+) converts string 'id' to a number

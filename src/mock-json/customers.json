@@ -4,41 +4,71 @@
     "customerName": "Jack Kelsey",
     "email": "jackkelsey@reddyice.com",
     "routeId": 812,
-    "isReddyIceCustomer": "Y"
+    "isReddyIceCustomer": "Y",
+    "address": "12007 N.Lamar",
+    "city": "Austin",
+    "state": "Texas",
+    "zip": "78753",
+    "phone": "8179987790"
   },
   {
     "customerId": 2,
     "customerName": "Shaun Michael",
     "email": "shaunmichael@reddyice.com",
     "routeId": 811,
-    "isReddyIceCustomer": "Y"
+    "isReddyIceCustomer": "Y",
+    "address": "1320 Buckhingam Rd",
+    "city": "Richardson",
+    "state": "Texas",
+    "zip": "75081",
+    "phone": "8179987880"
   },
   {
     "customerId": 3,
     "customerName": "Gill Ambrose",
     "email": "gillambrose@reddyice.com",
     "routeId": 816,
-    "isReddyIceCustomer": "Y"
+    "isReddyIceCustomer": "Y",
+    "address": "12009 W. Parmer",
+    "city": "Austin",
+    "state": "Texas",
+    "zip": "78752",
+    "phone": "8179954790"
   },
   {
     "customerId": 4,
     "customerName": "Jill Franko",
     "email": "jillfranko@reddyice.com",
     "routeId": 813,
-    "isReddyIceCustomer": "Y"
+    "isReddyIceCustomer": "Y",
+    "address": "12009 W. Parmer",
+    "city": "Austin",
+    "state": "Texas",
+    "zip": "78752",
+    "phone": "8179954790"
   },
   {
     "customerId": 5,
     "customerName": "Jack Dawson",
     "email": "jackdawson@reddyice.com",
     "routeId": 816,
-    "isReddyIceCustomer": "Y"
+    "isReddyIceCustomer": "Y",
+    "address": "12009 W. Parmer",
+    "city": "Austin",
+    "state": "Texas",
+    "zip": "78752",
+    "phone": "8179954790"
   },
   {
     "customerId": 6,
     "customerName": "Bill Goldberg",
     "email": "billgoldberg@reddyice.com",
     "routeId": 813,
-    "isReddyIceCustomer": "Y"
+    "isReddyIceCustomer": "Y",
+    "address": "12009 W. Parmer",
+    "city": "Austin",
+    "state": "Texas",
+    "zip": "78752",
+    "phone": "8179954790"
   }
 ]
