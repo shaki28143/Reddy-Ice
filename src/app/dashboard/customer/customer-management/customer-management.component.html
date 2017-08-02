@@ -24,24 +24,39 @@
                                 <thead class="text-danger">
                                     <tr>
                                         <th>
-                                            <span (click)="customer.sortField = 'customerId';customer.isAsc=!customer.isAsc;">Customer#</span>
+                                            <span style="cursor:pointer;" (click)="customer.sortField = 'customerId';customer.isAsc=!customer.isAsc;">
+                                                Customer#
+                                                <i class="fa fa-sort" *ngIf="(customer.sortField == 'customerId')" [ngClass]="(customer.isAsc && customer.sortField == 'customerId' ? 'fa-sort-up' : 'fa-sort-down')" aria-hidden="false"></i>                                                
+                                            </span>
                                         </th>
                                         <th>
-                                            <span (click)="customer.sortField = 'customerName';customer.isAsc=!customer.isAsc;">Customer Name</span>
+                                            <span style="cursor:pointer;" (click)="customer.sortField = 'customerName';customer.isAsc=!customer.isAsc;">
+                                                Customer Name
+                                                <i class="fa fa-sort" *ngIf="(customer.sortField == 'customerName')" [ngClass]="(customer.isAsc && customer.sortField == 'customerName' ? 'fa-sort-up' : 'fa-sort-down')" aria-hidden="false"></i>
+                                            </span>
                                         </th>
                                         <th>
-                                            <span (click)="customer.sortField = 'email';customer.isAsc=!customer.isAsc;">Email ID</span>
+                                            <span style="cursor:pointer;" (click)="customer.sortField = 'email';customer.isAsc=!customer.isAsc;">
+                                                Email ID
+                                                <i class="fa fa-sort" *ngIf="(customer.sortField == 'email')" [ngClass]="(customer.isAsc && customer.sortField == 'email' ? 'fa-sort-up' : 'fa-sort-down')" aria-hidden="false"></i>
+                                            </span>
                                         </th>
                                         <th>
-                                            <span (click)="customer.sortField = 'routeId';customer.isAsc=!customer.isAsc;">Route ID</span>
+                                            <span style="cursor:pointer;" (click)="customer.sortField = 'routeId';customer.isAsc=!customer.isAsc;">
+                                                Route ID
+                                                <i class="fa fa-sort" *ngIf="(customer.sortField == 'routeId')" [ngClass]="(customer.isAsc && customer.sortField == 'routeId' ? 'fa-sort-up' : 'fa-sort-down')" aria-hidden="false"></i>
+                                            </span>
                                         </th>
                                         <th>
-                                            <span (click)="customer.sortField = 'isReddyIceCustomer';customer.isAsc=!customer.isAsc;">RI Customer</span>
+                                            <span style="cursor:pointer;" (click)="customer.sortField = 'isReddyIceCustomer';customer.isAsc=!customer.isAsc;">
+                                                RI Customer
+                                                <i class="fa fa-sort" *ngIf="(customer.sortField == 'isReddyIceCustomer')" [ngClass]="(customer.isAsc && customer.sortField == 'isReddyIceCustomer' ? 'fa-sort-up' : 'fa-sort-down')" aria-hidden="false"></i>
+                                            </span>
                                         </th>
                                         <th>
                                             Action
                                         </th>
-                                    </tr>
+                                        </tr>
                                 </thead>
                                 <tbody>
                                     <tr *ngFor="let customer of customers | customerSearch:filterText | sortCustomer:customer.sortField:customer.isAsc">
