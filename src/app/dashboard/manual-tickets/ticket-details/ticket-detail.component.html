@@ -1,0 +1,28 @@
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header" data-background-color="red">
+                    <h4 class="title">{{title}}</h4>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <!-- <div style="margin: 20px 0px;display: inline-block;font-size: 18px;">Add New Customer</div> -->
+                            <a *ngIf="isReadOnly" class="btn btn-danger btn-round" style="float:right;" (click)="onEdit()">Edit</a>
+                            <a *ngIf="!isReadOnly" [routerLink]="selectedId ? ['../../'] : ['../']" class="btn btn-danger btn-round" style="float:right;">Save</a>
+                        </div>
+                    </div>
+                    <form novalidate #f="ngForm">
+                      <div class="col-sm-4">
+                        <div class="form-group form-black is-empty is-focussed">
+                            <input type="text" value="" placeholder="Regular" class="form-control" />
+                            <span class="material-input"></span>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

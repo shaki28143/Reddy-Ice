@@ -3,3 +3,48 @@
 }
 
 .logo {}
+
+.header-items {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .header-item-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px
+  }
+
+  .header-items {
+    display: flex;
+    width: 85%;
+    margin: 0px 15px;
+    padding: 10px 15px;
+    &:hover {
+      background: rgba(200, 200, 200, 0.2);
+      border-radius: 3px;
+    }
+  }
+
+  .user-profile {
+    display: flex;
+    flex-direction: row;
+    .user-name {
+      margin: 0;
+      font-size: 14px;
+      align-self: center;
+      color: #3C4858;
+      font-weight: 100;
+    }
+    i {
+      color: #a9afbb;
+      margin-right: 15px;
+    }
+  }
+}
+
+.filter-list {
+  margin-top: 7px;
+  color: #a9afbb;
+  margin-right: 15px;
+}

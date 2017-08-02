@@ -10,6 +10,8 @@ import { IconsComponent } from './icons/icons.component';
 import { TableComponent } from './reconciliation/table.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ManualTicketsComponent } from './manual-tickets/manual-tickets.component';
+import { TicketManagementComponent } from './manual-tickets/ticket-management/ticket-management.component';
+import { TicketDetailComponent } from './manual-tickets/ticket-details/ticket-detail.component';
 import { CustomerComponent } from './customer/customer.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { UserManagementComponent } from './user/user-management/user-management.component';
@@ -25,7 +27,7 @@ export const MODULE_ROUTES: Route[] = [
                 path: 'user', component: UserComponent, children: [
                     { path: '', component: UserManagementComponent },
                     { path: 'add-user', component: AddUserComponent},
-                    {path:'edit/:id',component:AddUserComponent, data:{
+                    {path: 'edit/:id', component: AddUserComponent, data:{
                         isEdit: true
                     } }
                 ]
@@ -39,7 +41,11 @@ export const MODULE_ROUTES: Route[] = [
             { path: 'report', component: ReportComponent },
             { path: 'icons', component: IconsComponent },
             { path: 'tracker', component: NotificationsComponent },
-            { path: 'manual-tickets', component: ManualTicketsComponent },
+            { path: 'manual-tickets', component: ManualTicketsComponent, children: [
+                    { path: '', component: TicketManagementComponent },
+                    { path: 'add', component: TicketDetailComponent },
+                ]
+            },
             {
                 path: 'customer', component: CustomerComponent, children: [
                     { path: '', component: CustomerManagementComponent },
@@ -51,7 +57,7 @@ export const MODULE_ROUTES: Route[] = [
             { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
         ]
     }
-]
+];
 
 export const MODULE_COMPONENTS = [
     HomeComponent,
@@ -60,6 +66,8 @@ export const MODULE_COMPONENTS = [
     IconsComponent,
     NotificationsComponent,
     ManualTicketsComponent,
+    TicketManagementComponent,
+    TicketDetailComponent,
     CustomerComponent,
     UpgradeComponent,
     DashboardComponent,
@@ -70,4 +78,4 @@ export const MODULE_COMPONENTS = [
     ReconciliationComponent,
     ReconciliationCashComponent,
     TableComponent
-]
+];
